@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>agent-room</title>
+<meta name="description" content="agent-room: 한 사람이 자기 PC에서 쓰는 개인용 AI 비서 채팅방">
+<style>
+  :root { --bg: #ffffff; --fg: #1d2129; --muted: #5b6270; --line: #e3e6eb; --accent: #2f6fec; }
+  @media (prefers-color-scheme: dark) { :root { --bg: #14171c; --fg: #e8eaee; --muted: #9aa1ad; --line: #2a2f37; --accent: #6d9cff; } }
+  body { margin: 0; background: var(--bg); color: var(--fg); font: 16px/1.7 system-ui, -apple-system, "Malgun Gothic", sans-serif; }
+  main { max-width: 720px; margin: 0 auto; padding: 40px 16px 64px; }
+  h1 { font-size: 28px; margin: 0 0 4px; }
+  h2 { font-size: 19px; margin: 32px 0 8px; }
+  p, li { color: var(--fg); }
+  .muted { color: var(--muted); }
+  a { color: var(--accent); }
+  ul { padding-left: 20px; }
+  footer { margin-top: 40px; padding-top: 16px; border-top: 1px solid var(--line); font-size: 14px; }
+</style>
+</head>
+<body>
+<main>
+  <h1>agent-room</h1>
+  <p class="muted">한 사람이 자기 PC에서 쓰는 개인용 AI 비서 채팅방입니다. 운영자 본인만 쓰며, 다른 사람에게 제공하는 공개 서비스가 아닙니다.</p>
+
+  <h2>무엇을 하나요</h2>
+  <ul>
+    <li>운영자가 채팅으로 묻고, AI 비서가 답을 쓰고, AI 감사 두 명이 그 답을 검토합니다.</li>
+    <li>구글 캘린더와 연결하면, 운영자가 일정을 물을 때 비서가 운영자의 일정을 읽고 정리해 답합니다.</li>
+    <li>비서가 만든 일정안은 운영자가 화면에서 [캘린더에 추가]를 눌러야만 들어갑니다. 이 앱이 직접 만든 '아스카 기록' 캘린더에만 쓰며, 다른 캘린더의 일정은 바꾸지 않습니다.</li>
+  </ul>
+
+  <h2>구글 데이터 처리</h2>
+  <p>구글 계정에서 읽는 정보와 그 정보를 어떻게 다루는지는 <a href="privacy.html">개인정보처리방침</a>에 적어 두었습니다.</p>
+
+  <footer class="muted">
+    <a href="privacy.html">개인정보처리방침</a> · 이 페이지는 agent-room의 구글 연결 안내를 위한 소개 페이지입니다.
+  </footer>
+</main>
+</body>
+</html>

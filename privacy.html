@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>agent-room 개인정보처리방침</title>
+<style>
+  :root { --bg: #ffffff; --fg: #1d2129; --muted: #5b6270; --line: #e3e6eb; --accent: #2f6fec; }
+  @media (prefers-color-scheme: dark) { :root { --bg: #14171c; --fg: #e8eaee; --muted: #9aa1ad; --line: #2a2f37; --accent: #6d9cff; } }
+  body { margin: 0; background: var(--bg); color: var(--fg); font: 16px/1.7 system-ui, -apple-system, "Malgun Gothic", sans-serif; }
+  main { max-width: 720px; margin: 0 auto; padding: 40px 16px 64px; }
+  h1 { font-size: 26px; margin: 0 0 4px; }
+  h2 { font-size: 18px; margin: 28px 0 8px; }
+  .muted { color: var(--muted); }
+  a { color: var(--accent); }
+  ul { padding-left: 20px; }
+  blockquote { margin: 8px 0; padding: 8px 12px; border-left: 3px solid var(--line); color: var(--muted); }
+  footer { margin-top: 40px; padding-top: 16px; border-top: 1px solid var(--line); font-size: 14px; }
+</style>
+</head>
+<body>
+<main>
+  <h1>agent-room 개인정보처리방침</h1>
+  <p class="muted">시행일: 2026년 10월 11일</p>
+
+  <h2>1. 누가 쓰는 앱인가요</h2>
+  <p>agent-room은 운영자 한 사람이 자기 PC에서 돌리는 개인용 앱입니다. 운영자 본인의 구글 계정만 연결하며, 다른 사람의 계정이나 데이터를 받지 않습니다.</p>
+
+  <h2>2. 구글에서 읽는 정보</h2>
+  <ul>
+    <li><b>구글 캘린더</b>: 운영자가 고른 캘린더의 일정 제목, 시작·끝 시각, 장소, 종일 여부, 캘린더 이름. 일정 설명·참석자·회의 링크는 구글에 요청하지 않습니다.</li>
+    <li><b>캘린더 쓰기</b>: 이 앱이 만든 '아스카 기록' 캘린더에만, 운영자가 화면에서 [캘린더에 추가]를 누를 때만 일정을 넣습니다. 참석자 초대는 하지 않습니다.</li>
+  </ul>
+
+  <h2>3. 어디서 처리하나요</h2>
+  <ul>
+    <li>모든 처리는 운영자의 PC에서 돌아가는 서버에서 합니다. 이 앱을 위한 별도의 클라우드 서버는 없습니다.</li>
+    <li>구글 연결 정보(갱신 토큰)는 운영자 PC의 사용자 환경변수에만 둡니다.</li>
+  </ul>
+
+  <h2>4. 누구에게 보내나요</h2>
+  <ul>
+    <li>운영자가 일정에 관해 물으면, 답을 만들기 위해 읽은 일정 정보를 AI API 제공사(Anthropic, OpenAI)에 보냅니다. 운영자가 요청한 답을 만드는 데만 씁니다.</li>
+    <li>운영자 휴대폰으로 보내는 알림에 비서 답의 첫 줄이 들어갈 수 있습니다. 알림 내용은 암호화되어 운영자가 등록한 기기로만 갑니다.</li>
+    <li>구글 데이터를 팔거나, 광고에 쓰거나, 위 목적 밖의 제3자에게 넘기지 않습니다.</li>
+    <li>구글 데이터를 AI 모델 학습에 쓰지 않고, 학습용으로 제공하지 않습니다.</li>
+  </ul>
+
+  <h2>5. 얼마나 보관하나요</h2>
+  <ul>
+    <li>읽은 일정 원본은 저장하지 않습니다. 비서의 답에 들어간 내용만 운영자 PC의 대화 기록에 남습니다.</li>
+    <li>운영자가 추가를 요청한 일정안(제목·시각·장소·메모)은 처리 상태와 함께 운영자 PC에 기록합니다.</li>
+    <li>대화 기록과 그 백업은 운영자 PC와 운영자 본인의 구글 드라이브에만 두며, 운영자가 직접 관리합니다.</li>
+  </ul>
+
+  <h2>6. 연결 끊기</h2>
+  <p>구글 계정의 <a href="https://myaccount.google.com/permissions">서드 파티 앱 접근 권한</a> 화면에서 agent-room의 접근을 언제든지 삭제할 수 있습니다. 삭제하면 이 앱은 더 이상 구글 데이터를 읽거나 쓰지 못합니다.</p>
+
+  <h2>7. 구글 API 사용자 데이터 정책</h2>
+  <p>agent-room이 구글 API에서 받은 정보를 쓰고 다른 앱으로 보내는 일은 구글 API 서비스 사용자 데이터 정책(제한적 사용 요건 포함)을 따릅니다.</p>
+  <blockquote lang="en">agent-room's use and transfer to any other app of information received from Google APIs will adhere to the <a href="https://developers.google.com/terms/api-services-user-data-policy">Google API Services User Data Policy</a>, including the Limited Use requirements.</blockquote>
+
+  <h2>8. 바뀌는 경우</h2>
+  <p>읽는 정보가 늘거나 처리 방식이 바뀌면 이 페이지를 먼저 고치고 시행일을 바꿉니다.</p>
+
+  <footer class="muted"><a href="index.html">agent-room 소개</a></footer>
+</main>
+</body>
+</html>
